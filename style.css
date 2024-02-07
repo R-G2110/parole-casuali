@@ -48,7 +48,7 @@ main {
 	color: green;
 	text-align: center;
 	width: 50%;
-	min-height: 300px;
+	min-height: 50px;
 	margin: 0 auto;
 	border: 5px solid green;
 	border-radius: 10px;
