@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js" integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<title>Parole Casuali</title>
+</head>
+<body>
+
+	<header>
+		<div class="h-100  d-flex justify-content-center align-items-center">
+			<h2>Parole Casuali</h2>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="card">
+				<p>Inserisci il numero di parole da generare</p>
+				<div class="top-content d-flex justify-content-center align-items-center">
+					<input id="input-number" type="text" pattern="[0-9]" inputmode="numeric" maxlength="20" placeholder="es. 1000">
+					<button class="btn btn-generate">Invio</button>
+					<button class="btn btn-reset">Resetta</button>
+				</div>
+
+				<div class="bottom-content">
+					<h4 id="loader" class="loader hidden">Loading...</h4>
+					<p id="phrase-output"></p>
+				</div>
+
+			</div>
+		</div>
+	</main>
+	<script src="js/script.js"></script>
+</body>
+</html>
